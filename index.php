@@ -1,15 +1,5 @@
 <?php
-    function generateRandomPassword($length) {
-        $chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+[]{}|;:,.<>?';
-        $password = '';
-        
-        for ($i = 0; $i < $length; $i++) {
-            $randomChar = $chars[rand(0, strlen($chars) - 1)];
-            $password .= $randomChar;
-        }
-        
-        return $password;
-    }
+    require_once __DIR__ . '/functions.php';
 ?>
 
 <!DOCTYPE html>
